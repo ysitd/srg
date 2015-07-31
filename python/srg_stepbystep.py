@@ -98,9 +98,11 @@ def main():
     reqresult = parse_qs(req.decode())
     results = reqresult.get('resultid')
 
-    print('Image: http://www.speedtest.net/result/%s.png' %
+    print('測試結果圖片 Image: http://www.speedtest.net/result/%s.png' %
           results[0])
-    print('In a webpage: http://www.speedtest.net/my-result/%s' % results[0])
+    print('測試結果網頁 In a webpage: http://www.speedtest.net/my-result/%s' % results[0])
+    print('')
+    main()
 
 if __name__ == "__main__":
     main()
